@@ -1,0 +1,61 @@
+<!-------w------------
+
+    Assignment 4
+    Name: Al Hochbaum
+    Date: 10/14/2023
+    Description: The main html for the webpage, that will be added to by the road closures API
+
+--------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="script.js"></script>
+		<link rel="stylesheet"  type="text/css" href="main.css" />
+		<title>My Open Data Assignment</title>
+	</head>
+	<body>
+	
+		<form action="index.html" id="request_form"  method="post">
+			<legend>Winnipeg Road Closures API</legend>
+			<ul>
+				<li>
+					<p></p>
+					<label for="organization">Organization</label>
+					<input type="text" name="organization" id="organization" value="">
+				</li>
+				<li>
+					<label for="district">Direction</label>
+					<input type="text" name="district" id="district" value="">
+				</li>
+				<li>
+					<input type="submit" id="submit" name="command" value="Submit">
+					<input type="reset"  id="reset" name="command" value="Reset">
+				</li>
+			</ul>
+		</form>
+		<table id="road_closures">
+			<thead id="table_header">
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<p id="message_error"></p>
+		<div id="displayContent" class="modal" >
+			<div class="w3-modal-content w3-card-4">
+			<header class="w3-container w3-teal"> 
+				<span></span>
+				<h2></h2>
+			</header>
+			<div class="w3-container">
+			<footer class="w3-container w3-teal">
+				<button  type="button" class="button">Close</button>
+				<p>Modal Footer</p>
+			</footer>
+		 </div>
+		</div>
+	</body>
+</html>
